@@ -1,0 +1,89 @@
+.ember-application, .container-fluid{
+	background-color: #f7f7f6;
+	font-family: 'Lato', sans-serif;
+}
+nav{
+	background: #72c0db;
+	color: white;
+}
+nav hr{
+	line-height:50px;
+	color:white;
+	border:1px solid white;
+	height:50px;
+	margin-bottom: 1%;
+	margin-right: 3%;
+	margin-left: 3%;
+	font-size: 2em;
+}
+nav span{
+	font-weight: bold;
+	font-size: 20px;
+
+}
+a button{
+	margin-top: 1.5%;
+	margin-left: 88%;
+	margin-bottom: 1.5%;
+}
+#but{
+	margin-top: 5%;
+}
+#tab{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+table{
+	background-color: white;
+	box-shadow: 00 2px 4px rgba(52, 58, 64, 0.1);
+}
+thead{
+	background-color: #194767;
+	color: white;
+}
+#edit{
+	color: #C1C1C1;
+	margin-right: 10%;
+}
+#del{
+	color: #FFB0B0;
+	cursor: pointer;
+
+}
+#del1{
+	color: #FFB0B0;
+	cursor: pointer;
+}
+#check{
+	color: #C1C1C1;
+}
+#check1{
+	color: #FFB0B0;
+}
+#line{
+	margin-top: 4%;
+}
+#note{
+	background-color: white;
+	color: gray;
+}
+.card{
+	margin: 5% 12%;
+}
+.card h3{
+	margin: 5% 5%;
+}
+form{
+	margin: 0% 5%; 
+}
+footer small{
+    float: right;
+    color: gray;
+}
+footer h4{
+	display: inline-block;
+	color: #194767;
+}
+footer p{
+	color: black;
+}

@@ -1,0 +1,32 @@
+
+    <div class="container-fluid">
+		<a href="/add"><button type="button" class="btn btn-info">Add Task</button></a>
+	</div>
+    
+    <div class="container-fluid" id="tab">
+		<div class="table-responsive">
+	  		<table class="table">
+	    		<thead>
+			      <tr>
+                    <th></th>
+			        <th>Task</th>
+			        <th>Complete by</th>
+			        <th>Actions</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			    	{{#each tasks as |task|}}
+                    <tr>
+                        <th scope="row"><i id="check" class="far fa-check-circle"></i></th>
+                        <td class="hand"> <a id="show" href="#">{{task.name}}</a> </td>
+                        <td>{{date-format task.date}}</td>
+                        <td> 
+                            <i id="edit" class="fas fa-pencil-alt" {{action "edit" i }}></i>
+                            <i id="del" class="fas fa-trash-alt" {{action "deleteTask" i}}></i>
+                        </td>
+                    </tr>
+                {{/each}}
+			    </tbody>
+	  		</table>
+		</div>
+	</div> 

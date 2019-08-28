@@ -1,0 +1,26 @@
+<div class="container-fluid" id="tab">
+		<div id="but" class="table-responsive">
+	  		<table class="table">
+	    		<thead>
+			      <tr>
+                    <th></th>
+			        <th>Task</th>
+			        <th>Complete by</th>
+			        <th>Actions</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			    	{{#each tasks as |task|}}
+                    <tr>
+                        <th scope="row"><i id="check1" class="far fa-times-circle"></i></th>
+                        <td class="hand"> {{task.name}} </td>
+                        <td>{{date-format task.date}}</td>
+                        <td> 
+                            <i id="del1" class="fas fa-trash-alt" {{action "deleteTask" i}}></i>
+                        </td>
+                    </tr>
+                {{/each}}
+			    </tbody>
+	  		</table>
+		</div>
+	</div> 
